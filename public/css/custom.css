@@ -1,0 +1,37 @@
+.antialiased.waiting .min-h-screen {
+    opacity: 1;
+}
+.antialiased .loading {
+    position: absolute;
+    top: 40%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    z-index: 99;
+    display: none;
+}
+.antialiased .loading .loader {
+    width: 48px;
+    height: 48px;
+    border: 7px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-animation: rotation 1s linear infinite;
+            animation: rotation 1s linear infinite;
+      background: #fff0;
+}
+.antialiased.waiting {
+    background-color: #202020;
+}
+.antialiased.waiting .min-h-screen {
+    opacity: 0.4;
+}
+.antialiased.waiting .loading {
+    display: flex;
+}
+@keyframes rotation {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+}
